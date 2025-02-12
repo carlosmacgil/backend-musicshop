@@ -26,6 +26,7 @@ public class AlbumController {
         return new ResponseEntity<>(oAlbumService.getPage(oPageable, filter), HttpStatus.OK);
     }
 
+    
     @GetMapping("/{id}")
     public ResponseEntity<AlbumEntity> getAlbum(@PathVariable Long id) {
         return new ResponseEntity<>(oAlbumService.get(id), HttpStatus.OK);

@@ -51,7 +51,6 @@ public class AlbumService {
             oAlbumEntity.setNombre("Album " + i);
             oAlbumEntity.setArtista("Artista " + i);
             oAlbumEntity.setPrecio(10.0 + i);
-            oAlbumEntity.setApi("API " + i);
             oAlbumRepository.save(oAlbumEntity);
         }
         return cantidad;

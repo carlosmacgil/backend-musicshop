@@ -25,10 +25,6 @@ public class AlbumEntity {
     @DecimalMin(value = "0.0", inclusive = false)
     private Double precio;
 
-    @NotNull
-    @Size(max = 50)
-    private String api;
-
     // Getters y Setters
     public Long getId() {
         return id;
@@ -60,13 +56,5 @@ public class AlbumEntity {
 
     public void setPrecio(Double precio) {
         this.precio = precio;
-    }
-
-    public String getApi() {
-        return api;
-    }
-
-    public void setApi(String api) {
-        this.api = api;
     }
 }
