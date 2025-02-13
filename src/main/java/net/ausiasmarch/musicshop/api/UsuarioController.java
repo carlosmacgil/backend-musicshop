@@ -31,10 +31,22 @@ public class UsuarioController {
     @Autowired
     UsuarioService oUsuarioService;
 
+    
+    @PostMapping("/register")
+    public ResponseEntity<UsuarioEntity> registerUsuario(@RequestBody UsuarioEntity usuario) {
+       
+        UsuarioEntity savedUsuario = oUsuarioService.createWithoutAuth(usuario);
+        return ResponseEntity.ok(savedUsuario);
+    }
+
+
     @GetMapping("/byemail/{email}")
     public ResponseEntity<UsuarioEntity> getUsuarioByEmail(@PathVariable(value = "email") String email) {
         return ResponseEntity.ok(oUsuarioService.getByEmail(email));
     }
+
+
+   
 
     @GetMapping("/{id}")
     public ResponseEntity<UsuarioEntity> getUsuarioById(@PathVariable(value = "id") Long id) {
@@ -81,4 +93,7 @@ public class UsuarioController {
     }
 
 
+
+
+   
 }

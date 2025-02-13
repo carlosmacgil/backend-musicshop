@@ -89,6 +89,13 @@ public class UsuarioService {
             if (oUsuarioEntity.getSaldo() != null) {
                 oUsuarioEntityFromDatabase.setSaldo(oUsuarioEntity.getSaldo());
             }
+            if (oUsuarioEntity.getTipousuario() != null) {
+                oUsuarioEntityFromDatabase.setTipousuario(oUsuarioEntity.getTipousuario());
+            }
+
+
+
+            
             return oUsuarioRepository.save(oUsuarioEntityFromDatabase);
         } else {
             throw new UnauthorizedAccessException("No tienes permisos para modificar el usuario");
@@ -102,4 +109,14 @@ public class UsuarioService {
         oUsuarioRepository.deleteAll();
         return this.count();
     }
+
+
+
+
+
+    public UsuarioEntity createWithoutAuth(UsuarioEntity oUsuarioEntity) {
+        return oUsuarioRepository.save(oUsuarioEntity);
+    }
+
+    
 }

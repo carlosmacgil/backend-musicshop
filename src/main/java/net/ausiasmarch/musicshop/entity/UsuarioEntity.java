@@ -24,21 +24,21 @@ public class UsuarioEntity {
     @Column(name = "id")
     private Long id;
 
-    @NotNull
+  
     @Size(min = 3, max = 100)
-    @Column(name = "nombre", nullable = false, length = 100)
+    @Column(name = "nombre", length = 100)
     private String nombre;
 
-    @NotNull
+   
     @Email
     @Size(max = 150)
-    @Column(name = "email", nullable = false, length = 150, unique = true)
+    @Column(name = "email", length = 150, unique = true)
     private String email;
     
-    @NotNull
+   
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Size(max = 250)
-    @Column(name = "contrasena", nullable = false, length = 250)
+    @Column(name = "contrasena", length = 250)
     private String password;
 
     @Column(name = "saldo", precision = 3, scale = 2)

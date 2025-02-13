@@ -51,12 +51,12 @@ public class ArtistaController {
         return new ResponseEntity<Long>(oArtistaService.delete(id), HttpStatus.OK);
     }
 
-    @PutMapping("")
+    @PostMapping("")
     public ResponseEntity<ArtistaEntity> create(@RequestBody ArtistaEntity oArtistaEntity) {
         return new ResponseEntity<ArtistaEntity>(oArtistaService.create(oArtistaEntity), HttpStatus.OK);
     }
 
-    @PostMapping("")
+    @PutMapping("")
     public ResponseEntity<ArtistaEntity> update(@RequestBody ArtistaEntity oArtistaEntity) {
         return new ResponseEntity<ArtistaEntity>(oArtistaService.update(oArtistaEntity), HttpStatus.OK);
     }
