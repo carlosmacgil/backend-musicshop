@@ -35,8 +35,7 @@ public class CompraService {
 
     public Long count() {
         return oCompraRepository.count();
-    }
-
+    } 
     public Long delete(Long id) {
         oCompraRepository.deleteById(id);
         return id;
