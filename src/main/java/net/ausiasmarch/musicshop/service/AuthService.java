@@ -82,4 +82,11 @@ public class AuthService {
         return this.isAuditor() && oUsuarioEntity.getId() == id;
     }
 
+    
+
+
+
+
+
+
 }

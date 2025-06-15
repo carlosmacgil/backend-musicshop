@@ -44,12 +44,38 @@ public class CompraController {
 
     @PostMapping("")
     public ResponseEntity<CompraEntity> create(@RequestBody CompraEntity oCompraEntity) {
-        return new ResponseEntity<>(oCompraService.create(oCompraEntity), HttpStatus.OK);
+        try {
+            // Validar campos requeridos
+            if (oCompraEntity.getPrecio() == null || oCompraEntity.getPrecio() <= 0) {
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            return new ResponseEntity<>(oCompraService.create(oCompraEntity), HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @PutMapping("")
     public ResponseEntity<CompraEntity> update(@RequestBody CompraEntity oCompraEntity) {
-        return new ResponseEntity<>(oCompraService.update(oCompraEntity), HttpStatus.OK);
+        try {
+            // Validar que la compra existe
+            CompraEntity compraExistente = oCompraService.get(oCompraEntity.getId());
+            if (compraExistente == null) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            
+            // Actualizar solo los campos permitidos
+            compraExistente.setPrecio(oCompraEntity.getPrecio());
+            compraExistente.setCalle(oCompraEntity.getCalle());
+            compraExistente.setCodigoPostal(oCompraEntity.getCodigoPostal());
+            compraExistente.setTelefono(oCompraEntity.getTelefono());
+            compraExistente.setCostePedido(oCompraEntity.getCostePedido());
+            compraExistente.setPagado(oCompraEntity.getPagado());
+            
+            return new ResponseEntity<>(oCompraService.update(compraExistente), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @PostMapping("/random/{cantidad}")

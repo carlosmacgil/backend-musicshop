@@ -8,6 +8,9 @@ import net.ausiasmarch.musicshop.entity.UsuarioEntity;
 import net.ausiasmarch.musicshop.exception.ResourceNotFoundException;
 import net.ausiasmarch.musicshop.exception.UnauthorizedAccessException;
 import net.ausiasmarch.musicshop.repository.UsuarioRepository;
+import net.ausiasmarch.musicshop.repository.CompraRepository;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -57,14 +60,23 @@ public class UsuarioService {
         return oUsuarioRepository.count();
     }
 
+    @Autowired
+    private CompraRepository oCompraRepository;
+
+    @Transactional
     public Long delete(Long id) {
-        if (true) { // aqui va oAuthService.isAdmin()  pero no esta por que me daba error en el boton de borrar, cambiar
+        if (oAuthService.isAdmin() || oAuthService.getUsuarioFromToken().getId().equals(id)) {
+            // Primero eliminamos las compras asociadas al usuario
+            oCompraRepository.deleteByUsuarioId(id);
+            // Luego eliminamos al usuario
             oUsuarioRepository.deleteById(id);
             return 1L;
         } else {
             throw new UnauthorizedAccessException("No tienes permisos para borrar el usuario");
         }
     }
+
+
 
     public UsuarioEntity create(UsuarioEntity oUsuarioEntity) {
         if (oAuthService.isAdmin()) {

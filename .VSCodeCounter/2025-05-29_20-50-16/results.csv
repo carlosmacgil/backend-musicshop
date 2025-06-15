@@ -1,0 +1,43 @@
+"filename", "language", "Java", "Batch", "XML", "Java Properties", "MS SQL", "comment", "blank", "total"
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/.mvn/wrapper/maven-wrapper.properties", "Java Properties", 0, 0, 0, 3, 0, 16, 1, 20
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/mvnw.cmd", "Batch", 0, 108, 0, 0, 0, 26, 16, 150
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/pom.xml", "XML", 0, 0, 117, 0, 0, 1, 20, 138
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/MusicshopApplication.java", "Java", 9, 0, 0, 0, 0, 0, 5, 14
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/api/AlbumController.java", "Java", 51, 0, 0, 0, 0, 0, 13, 64
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/api/ArtistaController.java", "Java", 60, 0, 0, 0, 0, 0, 13, 73
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/api/AuthController.java", "Java", 25, 0, 0, 0, 0, 0, 7, 32
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/api/CompraController.java", "Java", 52, 0, 0, 0, 0, 0, 12, 64
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/api/PaymentController.java", "Java", 25, 0, 0, 0, 0, 0, 9, 34
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/api/TipoUsuarioController.java", "Java", 33, 0, 0, 0, 0, 0, 10, 43
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/api/UsuarioController.java", "Java", 69, 0, 0, 0, 0, 0, 31, 100
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/bean/ErrorBean.java", "Java", 32, 0, 0, 0, 0, 0, 12, 44
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/bean/LogindataBean.java", "Java", 13, 0, 0, 0, 0, 0, 3, 16
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/config/StripeConfig.java", "Java", 14, 0, 0, 0, 0, 0, 5, 19
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/entity/AlbumEntity.java", "Java", 45, 0, 0, 0, 0, 1, 14, 60
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/entity/ArtistaEntity.java", "Java", 53, 0, 0, 0, 0, 1, 14, 68
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/entity/CompraEntity.java", "Java", 46, 0, 0, 0, 0, 1, 14, 61
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/entity/TipousuarioEntity.java", "Java", 30, 0, 0, 0, 0, 0, 7, 37
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/entity/UsuarioEntity.java", "Java", 39, 0, 0, 0, 0, 0, 14, 53
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/exception/ApplicationExceptionHandler.java", "Java", 55, 0, 0, 0, 0, 0, 14, 69
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/exception/NotAcceptableException.java", "Java", 6, 0, 0, 0, 0, 0, 2, 8
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/exception/ResourceNotFoundException.java", "Java", 6, 0, 0, 0, 0, 0, 2, 8
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/exception/ResourceNotModifiedException.java", "Java", 6, 0, 0, 0, 0, 0, 3, 9
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/exception/UnauthorizedAccessException.java", "Java", 6, 0, 0, 0, 0, 0, 3, 9
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/filter/JWTFilter.java", "Java", 49, 0, 0, 0, 0, 3, 14, 66
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/repository/AlbumRepository.java", "Java", 9, 0, 0, 0, 0, 0, 4, 13
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/repository/ArtistaRepository.java", "Java", 11, 0, 0, 0, 0, 0, 5, 16
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/repository/CompraRepository.java", "Java", 9, 0, 0, 0, 0, 0, 4, 13
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/repository/TipousuarioRepository.java", "Java", 9, 0, 0, 0, 0, 0, 5, 14
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/repository/UsuarioRepository.java", "Java", 13, 0, 0, 0, 0, 3, 5, 21
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/service/AlbumService.java", "Java", 51, 0, 0, 0, 0, 0, 12, 63
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/service/ArtistaService.java", "Java", 64, 0, 0, 0, 0, 0, 14, 78
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/service/AuthService.java", "Java", 66, 0, 0, 0, 0, 0, 20, 86
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/service/CompraService.java", "Java", 55, 0, 0, 0, 0, 3, 12, 70
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/service/JWTService.java", "Java", 52, 0, 0, 0, 0, 0, 17, 69
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/service/RandomService.java", "Java", 8, 0, 0, 0, 0, 0, 5, 13
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/service/TipoUsuarioService.java", "Java", 29, 0, 0, 0, 0, 2, 5, 36
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/java/net/ausiasmarch/musicshop/service/UsuarioService.java", "Java", 99, 0, 0, 0, 0, 0, 26, 125
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/resources/application.properties", "Java Properties", 0, 0, 0, 20, 0, 2, 15, 37
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/main/resources/musicshop (3).sql", "MS SQL", 0, 0, 0, 0, 49, 53, 25, 127
+"/Users/carlosmaciasgil/VISUAL/TFG-main/TFG/backend/musicshop/src/test/java/net/ausiasmarch/musicshop/MusicshopApplicationTests.java", "Java", 9, 0, 0, 0, 0, 0, 5, 14
+"Total", "-", 1208, 108, 117, 23, 49, 112, 437, 2054
